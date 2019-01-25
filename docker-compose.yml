@@ -11,3 +11,6 @@ services:
       - ./docker/nuxt.js/src:/src:cached
     tty: true
     stdin_open: true
+    # Hot Module Replacement (HMR) is enable for virtual box.
+    environment:
+      - CHOKIDAR_USEPOLLING=true

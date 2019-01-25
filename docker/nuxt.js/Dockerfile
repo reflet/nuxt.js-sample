@@ -39,4 +39,4 @@ WORKDIR /src/app
 RUN yarn install
 
 EXPOSE 3000
-CMD ["npm", "run", "dev"]
+CMD ["yarn", "run", "dev"]
