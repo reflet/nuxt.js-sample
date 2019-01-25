@@ -17,6 +17,17 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+
+  /*
+  ** modules
+  */
+  modules: [
+    '@nuxtjs/axios'
+  ],
+  axios: {
+
+  },
+
   /*
   ** Build configuration
   */
@@ -33,6 +44,15 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+    }
+  },
+
+  /*
+  ** Watchers setting.
+  */
+  watchers: {
+    webpack: {
+      ignored: ['node_modules']
     }
   }
 }
