@@ -25,7 +25,7 @@ $ git clone git@github.com:reflet/nuxt.js-sample.git .
 $ docker-compose build
 
 # nux.jsインストール
-$ docker-compose run nuxtjs vue init nuxt-community/starter-template app
+$ docker-compose run nuxtjs bash -c "cd ../ && vue init nuxt-community/starter-template app"
 
 # パッケージをインストールする
 $ docker-compose run nuxtjs yarn install
