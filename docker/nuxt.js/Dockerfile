@@ -21,7 +21,6 @@ RUN npm install --global yarn@$CMD_YARN_VERSION && \
 # install direnv command.
 # - https://github.com/direnv/direnv
 # - https://github.com/direnv/direnv/releases
-# - http://diskogs.hatenablog.com/entry/2014/03/03/212438
 ARG DEV_DIRENV_VERSION=v2.19.0
 RUN wget -O direnv https://github.com/direnv/direnv/releases/download/$DEV_DIRENV_VERSION/direnv.linux-amd64 && \
     mv direnv /usr/local/bin/ && \
@@ -35,7 +34,7 @@ RUN npm install --global @vue/cli @vue/cli-init
 ADD src /src
 WORKDIR /src/app
 
-# install nuxt.js
+# install packages.
 RUN yarn install
 
 EXPOSE 3000
