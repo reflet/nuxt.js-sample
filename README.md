@@ -24,9 +24,6 @@ $ git clone git@github.com:reflet/nuxt.js-sample.git .
 # dockerイメージを構築する
 $ docker-compose build
 
-# nux.jsインストール
-$ docker-compose run nuxtjs bash -c "cd ../ && vue init nuxt-community/starter-template app"
-
 # パッケージをインストールする
 $ docker-compose run nuxtjs yarn install
 
@@ -59,4 +56,11 @@ $ docker-compose down
 
 # サーバ破棄 (コンテナ＋ボリューム)
 $ docker-compose down -v
+```
+
+### nuxt.jsプロジェクト作成方法
+「docker/nuxtjs/src/app」のプロジェクトを作成する場合のコマンドです。
+
+```bash
+$ docker-compose run nuxtjs bash -c "cd /src && vue init nuxt-community/starter-template app"
 ```
